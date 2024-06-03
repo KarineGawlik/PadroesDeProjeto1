@@ -3,11 +3,11 @@ package br.com.karineg;
 
 //Implementação concreta da fábrica para criar carros Toyota
 public class ToyotaFactory implements ICarFactory {
-	public ISedan createSedan() {
-		return new ToyotaSedan();
+	public Sedan createSedan() {
+		return new Sedan("Toyota");
 	}
 	
-	public ISuv createSuv() {
-		return new ToyotaSuv(); 
+	public Suv createSuv() {
+		return new Suv("Toyota"); 
 	}
 }

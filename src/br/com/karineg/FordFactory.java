@@ -2,11 +2,11 @@ package br.com.karineg;
 
 //Implementação concreta da fábrica para criar carros Ford
 public class FordFactory implements ICarFactory {
-	public ISedan createSedan() {
-		return new FordSedan();
+	public Sedan createSedan() {
+		return new Sedan("Ford");
 	}
 	
-	public ISuv createSuv() {
-		return new FordSuv();
+	public Suv createSuv() {
+		return new Suv("Ford");
 	}
 }
